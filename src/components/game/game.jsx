@@ -2,19 +2,18 @@ import './game.css'
 import scissor from '../../assets/images/icon-scissors.svg'
 import paper from '../../assets/images/icon-paper.svg'
 import rock from '../../assets/images/icon-rock.svg'
-import { useState } from 'react'
 
-function Game(props){
-
+function Game({onSelect}){
+      
     return(
         <div id='divGloGame'>
-            <div id='divBtnPaper'>
+            <div onClick={()=> onSelect('paper')} id='divBtnPaper'>
                 <img id='paper' src= {paper} alt="" />
             </div>
-            <div id='divBtnRock'>
+            <div onClick={()=> onSelect('rock')} id='divBtnRock'>
                 <img id='rock' src={rock} alt="" />
             </div>
-            <div id='divBtnScissor'>
+            <div onClick={()=> onSelect('scissor')} id='divBtnScissor'>
                 <img id='scissor' src={scissor} alt="" />
             </div>
         </div>
