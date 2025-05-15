@@ -1,0 +1,32 @@
+#divG{
+    display: flex;
+    border: 3px solid hsl(217, 16%, 45%);
+    border-radius: 5px;
+    width: 50vw;
+    height: 110px;
+    padding: 15px;
+    justify-content: space-between;
+
+}
+
+#divG h1{
+    margin: 0;
+}
+#divTitre{
+    color: white;
+    font-size: 12pt;
+}
+#divScore{
+    background-color: white;
+    border-radius: 5px;
+    width: 30%;
+}
+#divScore>h1{
+    text-align: center;
+    color: hsl(228, 19%, 45%);
+}
+#divScore>h4{
+    color: hsl(229, 64%, 46%);
+    text-align: center;
+    font-weight: 300;
+}
