@@ -4,18 +4,28 @@ import paper from '../../assets/images/icon-paper.svg'
 import rock from '../../assets/images/icon-rock.svg'
 import background from '../../assets/images/bg-triangle.svg'
 
-function Game(){
+function Game(props){
+    // const images ={
+    //     scissorimg : scissor,
+    //     paperimg : paper,
+    //     rockimg : rock
+    // }
 
+    // let handleclick = (qqch) => {
+
+    // }
+
+    
     return(
         <div id='divGloGame' style={{ backgroundImage: `url(${background})` }}>
             <div id='divBtnPaper'>
-                <img id='imgPaper' src= {paper} alt="" />
+                <img id='paper' src= {paper} alt="" />
             </div>
             <div id='divBtnScissor'>
-                <img src={scissor} alt="" />
+                <img id='scissor' src={scissor} alt="" />
             </div>
             <div id='divBtnRock'>
-                <img src={rock} alt="" />
+                <img id='rock' src={rock} alt="" />
             </div>
         </div>
     )

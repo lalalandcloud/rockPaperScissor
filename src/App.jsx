@@ -5,6 +5,7 @@ import Header from './components/header/header'
 
 function App() {
 
+  
   const [score, setScore] = useState("0")
 
 
