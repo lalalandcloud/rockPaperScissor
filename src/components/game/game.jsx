@@ -5,8 +5,9 @@ import rock from '../../assets/images/icon-rock.svg'
 import background from '../../assets/images/bg-triangle.svg'
 
 function Game(){
+
     return(
-        <div style={{ backgroundImage: `url(${background})` }}>
+        <div id='divGloGame' style={{ backgroundImage: `url(${background})` }}>
             <div id='divBtnPaper'>
                 <img id='imgPaper' src= {paper} alt="" />
             </div>

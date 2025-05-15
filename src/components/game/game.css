@@ -1,3 +1,11 @@
+#divGloGame{
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    gap: 10px;
+    height: 50vh;
+}
+
 #divBtnPaper{
     background-color: white;
     border-radius: 50%;
@@ -15,14 +23,12 @@
     height: 60px;
     border: solid 20px hsl(349, 71%, 54%);
 }
+
 #divBtnScissor{
     background-color: white;
     border-radius: 50%;
     padding: 30px;
     width: 60px;
-    
     height: 60px;
     border: solid 20px hsl(39, 89%, 51%);
 }
-
-
