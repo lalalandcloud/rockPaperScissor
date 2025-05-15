@@ -5,7 +5,12 @@ import Header from './components/header/header'
 
 function App() {
 
-  
+  const [elements, setElements] = useState ([
+    {id : "divBtnPaper"},
+    {id : "divBtnRock"},
+    {id : "divBtnScissor"}
+])
+
   const [score, setScore] = useState("0")
 
 

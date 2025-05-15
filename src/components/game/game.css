@@ -1,34 +1,46 @@
 #divGloGame{
     display: flex;
-    width: 50vw;
-    justify-content: center;
+    width: 60vw;
     gap: 10px;
-    height: 50vh;
+    height: 75vh;
+    background-image: url("../../assets/images/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position-y: 150px;
+    background-position-x: center;
+    background-size: 200px;
+    justify-self: center;
 }
 
 #divBtnPaper{
     background-color: white;
     border-radius: 50%;
     padding: 30px;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border: solid 20px hsl(230, 89%, 63%);
+    cursor: pointer;
+    transform: translate(100px, 40px);
 }
 
 #divBtnRock{
     background-color: white;
     border-radius: 50%;
     padding: 30px;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border: solid 20px hsl(349, 71%, 54%);
+    cursor: pointer;
+    transform: translate(70px, 290px);
+
 }
 
 #divBtnScissor{
     background-color: white;
     border-radius: 50%;
     padding: 30px;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border: solid 20px hsl(39, 89%, 51%);
+    cursor: pointer;
+    transform: translate(50px, 40px);
 }
