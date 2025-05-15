@@ -18,7 +18,7 @@ function App() {
     <>
       <Header score={score} />
   
-      {select ? (
+      {!select ? (
         <Vs element={select} />
       ) : (
         <Game onSelect={(element) => {
