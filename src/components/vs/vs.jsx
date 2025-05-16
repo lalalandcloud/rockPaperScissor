@@ -12,13 +12,13 @@ const images ={
 
 function Vs ({id , randomId}) {
     
-    const [step, setStep] = useState(0);
+    // const [step, setStep] = useState(0);
     
-    if (step === 0){
-        setTimeout(() => setStep(1), 100)
-        setTimeout(() => setStep(2), 1100)
-        setTimeout(() => setStep(3), 2100)
-    }
+    // if (step === 0){
+    //     setTimeout(() => setStep(1), 100)
+    //     setTimeout(() => setStep(2), 1100)
+    //     setTimeout(() => setStep(3), 2100)
+    // }
 
     const resultat = () => {
         if( id === randomId) return "DRAW";
@@ -34,7 +34,7 @@ function Vs ({id , randomId}) {
 
     return(
         <div id='divGloVs' className='vs-container'>
-            {step >= 1 &&(
+            {/* {step >= 1 &&( */}
 
                 <div id='divYou'>
                     <div>
@@ -46,9 +46,13 @@ function Vs ({id , randomId}) {
                         </div>
                     </div>
                 </div>
-            )}
+            {/* )} */}
+                <div id='divRes'>
+                    <h1>{resultat()}</h1>
+                    <button id='btnRes'>PLAY AGAIN</button>
+                </div>
 
-            {step >= 2 && (
+            {/* {step >= 2 && ( */}
                 <div id='divHouse'>
                     <div>
                         <h4>THE HOUSE PICKED</h4>
@@ -59,13 +63,9 @@ function Vs ({id , randomId}) {
                         </div>
                     </div>
                 </div>
-            )}
-            {step >= 3 &&(
-                <div id='divRes'>
-                    <h1>{resultat()}</h1>
-                    <button onClick={replay}>PLAY AGAIN</button>
-                </div>
-            )}
+            {/* )} */}
+            {/* {step >= 3 &&( */}
+            {/* )} */}
 
         </div>
 

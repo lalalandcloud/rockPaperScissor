@@ -17,18 +17,24 @@
     align-items: center;
     justify-content: center;
 }
+
 #divRes{
-    opacity: 0;
-    transition:  opacity 0.5s ease-in transform 0.5s ease-in;
+    /* opacity: 0;
+    transition:  opacity 0.5s ease-in transform 0.5s ease-in; */
     margin: 25px;
-    transform: translateY(20px);
+    /* transform: translateY(20px); */
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1, h4{
+    color: white;
 }
 #divRes.show{
     opacity: 1;
     transform: translateY(0);
-
 }
-
 #divYou{
     display: flex;
     flex-direction: column;
@@ -40,16 +46,13 @@
     align-items: center;
 
 }
-#divGloVs h4{
-    color: white;
-    font-size: 11pt;
-    letter-spacing: 0;
-}
+
 #divGloVs .divBtnBrder{
     margin-top: 15px;
     height: 200px;
     width: 200px;
 }
+
 #divGloVs .btn{
     width: 80px;
     height: 80px;
@@ -73,6 +76,7 @@
     background-color: hsl(39, 89%, 51%) ;
     border-bottom: 7px solid hsl(39, 89%, 41%) ;
 }
+
 .paperB{
     background-color: white;
     border-radius: 50%;
@@ -81,7 +85,8 @@
     height: 50px;
     cursor: pointer;
     border-top: 5px solid rgb(192, 192, 192);
-}.scissorB{
+}
+.scissorB{
     background-color: white;
     border-radius: 50%;
     padding: 30px;
@@ -89,7 +94,8 @@
     height: 50px;
     cursor: pointer;
     border-top: 5px solid rgb(192, 192, 192);
-}.rockB{
+}
+.rockB{
     background-color: white;
     border-radius: 50%;
     padding: 30px;
