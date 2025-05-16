@@ -11,15 +11,28 @@
     justify-self: center;
 }
 
+#divGloBtn{
+    display: flex;
+
+}
+
+.divBtnBrder{
+    display: flex;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
 #divBtnPaper{
     background-color: white;
     border-radius: 50%;
     padding: 30px;
     width: 50px;
     height: 50px;
-    border: solid 20px hsl(230, 89%, 63%);
     cursor: pointer;
-    transform: translate(100px, 40px);
+    border-top: 5px solid rgb(192, 192, 192);
 }
 
 #divBtnRock{
@@ -28,19 +41,17 @@
     padding: 30px;
     width: 50px;
     height: 50px;
-    border: solid 20px hsl(349, 71%, 54%);
     cursor: pointer;
-    transform: translate(70px, 290px);
+    border-top: 5px solid rgb(192, 192, 192);
 
 }
 
 #divBtnScissor{
     background-color: white;
+    border-top: 5px solid rgb(192, 192, 192);
     border-radius: 50%;
     padding: 30px;
     width: 50px;
     height: 50px;
-    border: solid 20px hsl(39, 89%, 51%);
     cursor: pointer;
-    transform: translate(50px, 40px);
 }

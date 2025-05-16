@@ -1,0 +1,61 @@
+#divGloGame{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.divBtn{
+    background-color: white;
+    border-radius: 50%;
+    padding: 30px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divBtn img{
+    width: 50px;
+}
+
+.paper{
+    background-color: hsl(230, 71%, 55%);
+    border-bottom: 7px solid hsl(230 71% 45%) ;
+}
+.rock {
+    background-color: hsl(349, 59%, 46%);
+    border-bottom: 7px solid hsl(349, 59%, 36%) ;
+
+  }
+.scissor {
+    background-color: hsl(39, 89%, 51%) ;
+    border-bottom: 7px solid hsl(39, 89%, 41%) ;
+}
+.paperB{
+    background-color: white;
+    border-radius: 50%;
+    padding: 30px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-top: 5px solid rgb(192, 192, 192);
+}.scissorB{
+    background-color: white;
+    border-radius: 50%;
+    padding: 30px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-top: 5px solid rgb(192, 192, 192);
+}.rockB{
+    background-color: white;
+    border-radius: 50%;
+    padding: 30px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-top: 5px solid rgb(192, 192, 192);
+}

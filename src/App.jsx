@@ -19,12 +19,9 @@ function App() {
       <Header score={score} />
   
       {!select ? (
-        <Vs element={select} />
+        <Game onSelect={setSelect} />
       ) : (
-        <Game onSelect={(element) => {
-          setSelect(element); 
-          setStep("vs"); 
-        }} />
+        <Vs id={select}/>
       )}
     </>
   );
