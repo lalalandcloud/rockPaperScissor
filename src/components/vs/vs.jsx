@@ -1,7 +1,7 @@
 import './vs.css'
 import imgPaper from '../../assets/images/icon-paper.svg'
 import imgRock from '../../assets/images/icon-rock.svg'
-import imgScissor from '../../assets/images/icon-scissor.svg'
+import imgScissor from '../../assets/images/icon-scissors.svg'
 
 const images ={
     paper: imgPaper,
@@ -9,7 +9,7 @@ const images ={
     scissor: imgScissor
 }
 
-function Vs ({id}) {
+function Vs ({id , randomId}) {
     
 
     return(
@@ -19,8 +19,10 @@ function Vs ({id}) {
                     <img src={images[id]} alt="" />
                 </div>
             </div>
-            <div>
-                
+            <div className={`divBtnBrder ${randomId}`}>
+                <div className={`btn ${randomId}B`}>
+                    <img src={images[randomId]} alt="" />
+                </div>
             </div>
         </div>
     )
