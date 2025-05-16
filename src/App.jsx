@@ -6,20 +6,19 @@ import Vs from './components/vs/vs'
 
 function App() {
 
-  const [step, setStep] = useState("game")
+  // const [step, setStep] = useState("game")
   const [score, setScore] = useState("0")
   const [select, setSelect] = useState(null)
   const [choice, setChoice] = useState(null)
 
   const handle = (element) => {
-    setSelect(element); 
-    randomChoice()
+    setSelect(element);
+    setChoice(randomChoice())
   };
   
   const randomChoice = () =>{
     const choices =["paper", "rock", "scissor"];
-    const random = choices[Math.floor(Math.random() * setChoice.length)]
-    setChoice(random)
+    return choices[Math.floor(Math.random() * choices.length)]
   }
 
   return (
