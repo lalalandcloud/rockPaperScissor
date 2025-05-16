@@ -13,7 +13,7 @@ function Vs ({id , randomId}) {
     
 
     return(
-        <div>
+        <div id='divGloVs'>
             <div className={`divBtnBrder ${id}`}>
                 <div className={`btn ${id}B`}>
                     <img src={images[id]} alt="" />
