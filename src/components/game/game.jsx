@@ -14,18 +14,18 @@ function Game({onSelect}){
     return(
         <div id='divGloGame'>
             <div id='divGloBtn'>
-                <div className='divBtnBrder paper'>
-                    <div onClick={()=> onSelect('paper')} id='divBtnPaper' className='btn paperB'>
+                <div onClick={()=> onSelect('paper')} className='divBtnBrder paper'>
+                    <div id='divBtnPaper' className='btn paperB'>
                         <img id='paper' src= {paper} alt="" />
                     </div>
                 </div>
-                <div className='divBtnBrder scissor'>
-                    <div onClick={()=> onSelect('scissor')} id='divBtnScissor' className='btn scissorB'>
+                <div onClick={()=> onSelect('scissor')} className='divBtnBrder scissor'>
+                    <div id='divBtnScissor' className='btn scissorB'>
                         <img id='scissor' src={scissor} alt="" />
                     </div>
                 </div>
-                <div className='divBtnBrder rock'>
-                    <div onClick={()=> onSelect('rock')} id='divBtnRock' className='btn rockB'>
+                <div onClick={()=> onSelect('rock')} className='divBtnBrder rock'>
+                    <div id='divBtnRock' className='btn rockB'>
                         <img id='rock' src={rock} alt="" />
                     </div>
                 </div>

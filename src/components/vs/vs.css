@@ -2,7 +2,7 @@
     display: flex;
     gap: 20px;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
     align-items: center;
 }
 
@@ -25,21 +25,24 @@
     /* transform: translateY(20px); */
     display: flex;
     flex-direction: column;
-
+    align-items: center;
 }
 
 h1, h4{
     color: white;
 }
+
 #divRes.show{
     opacity: 1;
     transform: translateY(0);
 }
+
 #divYou{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 #divHouse{
     display: flex;
     flex-direction: column;
@@ -59,6 +62,7 @@ h1, h4{
     justify-content: center;
     display: flex;
 }
+
 .divBtn img{
     width: 50px;
 }
@@ -67,11 +71,12 @@ h1, h4{
     background-color: hsl(230, 71%, 55%);
     border-bottom: 7px solid hsl(230 71% 45%) ;
 }
+
 .rock {
     background-color: hsl(349, 59%, 46%);
     border-bottom: 7px solid hsl(349, 59%, 36%) ;
+}
 
-  }
 .scissor {
     background-color: hsl(39, 89%, 51%) ;
     border-bottom: 7px solid hsl(39, 89%, 41%) ;
@@ -86,6 +91,7 @@ h1, h4{
     cursor: pointer;
     border-top: 5px solid rgb(192, 192, 192);
 }
+
 .scissorB{
     background-color: white;
     border-radius: 50%;
@@ -95,6 +101,7 @@ h1, h4{
     cursor: pointer;
     border-top: 5px solid rgb(192, 192, 192);
 }
+
 .rockB{
     background-color: white;
     border-radius: 50%;
@@ -103,4 +110,15 @@ h1, h4{
     height: 50px;
     cursor: pointer;
     border-top: 5px solid rgb(192, 192, 192);
+}
+#btnRes{
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+    color: rgb(30, 53, 84);
+    width: 140px;
+}
+#btnRes:hover{
+    color: red;
 }

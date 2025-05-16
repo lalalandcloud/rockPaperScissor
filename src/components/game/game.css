@@ -17,7 +17,6 @@
     justify-self: center;
     top: 50px;
     position: relative;
-
 }
 
 .divBtnBrder{
@@ -28,9 +27,11 @@
     align-items: center;
     justify-content: center;
 }
+
 .divBtnBrder.paper{
     grid-row: 1 ;
 }
+
 .divBtnBrder.scissor{
     grid-row: 1 ;
 }

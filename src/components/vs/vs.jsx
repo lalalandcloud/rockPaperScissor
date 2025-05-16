@@ -10,7 +10,7 @@ const images ={
     scissor: imgScissor
 }
 
-function Vs ({id , randomId}) {
+function Vs ({id , randomId, result, onReplay}) {
     
     // const [step, setStep] = useState(0);
     
@@ -19,18 +19,8 @@ function Vs ({id , randomId}) {
     //     setTimeout(() => setStep(2), 1100)
     //     setTimeout(() => setStep(3), 2100)
     // }
+    
 
-    const resultat = () => {
-        if( id === randomId) return "DRAW";
-        if (
-            (id === "rock" && randomId === "scissor") ||
-            (id === "scissor" && randomId === "paper") ||
-            (id === "paper" && randomId === "rock")   
-        ){
-            return "YOU WON";
-        }
-        return "YOU LOSE"
-    };
 
     return(
         <div id='divGloVs' className='vs-container'>
@@ -48,7 +38,7 @@ function Vs ({id , randomId}) {
                 </div>
             {/* )} */}
                 <div id='divRes'>
-                    <h1>{resultat()}</h1>
+                    <h1 className='resultat'>{result}</h1>
                     <button id='btnRes'>PLAY AGAIN</button>
                 </div>
 
