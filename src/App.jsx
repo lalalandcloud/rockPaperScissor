@@ -1,8 +1,9 @@
-import { useState } from 'react'
+import { use, useState } from 'react'
 import './App.css'
 import Game from './components/game/game'
 import Header from './components/header/header'
 import Vs from './components/vs/vs'
+import Modal from './components/modal/modal'
 
 function App() {
 
@@ -10,15 +11,28 @@ function App() {
   const [score, setScore] = useState(0)
   const [select, setSelect] = useState(null)
   const [choice, setChoice] = useState(null)
+  const [stage, setStage] = useState(0);
+  const [result, setResult] = useState("")
+  const [showRules, setShowRules] = useState(false)
 
   const handle = (element) => {
     const pcChoice = randomChoice()
-    setSelect(element);
-    setChoice(pcChoice)
-    incrementation(element, pcChoice)
+    setSelect(element)
+    setStage(1);
+
+    setTimeout(() => {
+      setChoice(pcChoice)
+      setStage(2);
+
+      setTimeout(() =>{
+        const gameResult = getResult(element, pcChoice)
+        setResult(getResult);
+        setStage(3)
+        incrementation(gameResult)
+      }, 1000);
+    }, 1000);
   };
 
-  
   const getResult = (player, pc) => {
     if (player === pc) return "DRAW";
     if (
@@ -31,16 +45,24 @@ function App() {
     return "YOU LOSE";
   }
 
-  const incrementation = (player, pc) => {
-    const result = getResult (player, pc)
+
+  
+
+
+  const incrementation = (result) => {
     if (result === "YOU WON"){
-      return setScore(prev => prev+1)
-    }
-    else if (result === "YOU LOSE"){
+      setScore(prev => prev + 1)
+    } else if (result === "YOU LOSE"){
       return setScore(prev => prev-1)
     }
-  }
+  };
   
+  const replay = () => {
+    setSelect(null)
+    setChoice(null)
+    setStage(0)
+    setResult("")
+  };
 
   const randomChoice = () => {
     const choices =["paper", "rock", "scissor"];
@@ -56,13 +78,16 @@ function App() {
       ) : (
         <Vs 
           id={select} 
-          randomId={choice}
-          result={getResult(select, choice)}
-          // onReplay={reset}
+          randomId={stage >= 2 ? choice : null}
+          result={stage >= 3 ? result : null}
+          onReplay={replay}
         />
       )
-
       }
+      <button id='btnRules' onClick={() => setShowRules(true)}>Rules</button>
+      <Modal show={showRules} onClose={() => setShowRules(false)}>
+      </Modal>
+
     </>
   )}
   

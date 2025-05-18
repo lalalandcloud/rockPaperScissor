@@ -2,7 +2,6 @@ import './vs.css'
 import imgPaper from '../../assets/images/icon-paper.svg'
 import imgRock from '../../assets/images/icon-rock.svg'
 import imgScissor from '../../assets/images/icon-scissors.svg'
-import { useState } from 'react'
 
 const images ={
     paper: imgPaper,
@@ -19,7 +18,7 @@ function Vs ({id , randomId, result, onReplay}) {
     //     setTimeout(() => setStep(2), 1100)
     //     setTimeout(() => setStep(3), 2100)
     // }
-    
+
 
 
     return(
@@ -39,7 +38,7 @@ function Vs ({id , randomId, result, onReplay}) {
             {/* )} */}
                 <div id='divRes'>
                     <h1 className='resultat'>{result}</h1>
-                    <button id='btnRes'>PLAY AGAIN</button>
+                    <button onClick={onReplay} id='btnRes'>PLAY AGAIN</button>
                 </div>
 
             {/* {step >= 2 && ( */}

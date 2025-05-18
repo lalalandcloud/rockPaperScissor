@@ -121,4 +121,5 @@ h1, h4{
 }
 #btnRes:hover{
     color: red;
+    transition: ease-in-out 300ms;
 }
