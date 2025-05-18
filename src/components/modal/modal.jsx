@@ -9,6 +9,7 @@ function Modal({show, onClose,children}){
     return(
         <div className='modal-overlay' onClick={onClose}>
             <div className='modal-content' onClick={(e) => e.stopPropagation()}>
+                <h1>RULES</h1>
                 <img src={imgRules} alt="" />
                 <button className='close-btn' onClick={onClose}>
                     ✕
