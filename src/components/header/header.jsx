@@ -1,6 +1,7 @@
 import './header.css'
 
-function Header() {
+function Header(props) {
+
     return(
         <div id='divG'>
             <div id='divTitre'>
@@ -10,7 +11,7 @@ function Header() {
             </div>
             <div id='divScore'>
                 <h4>Score</h4>
-                <h1>0</h1>
+                <h1>{props.score}</h1>
             </div>
         </div>
     )

@@ -3,10 +3,10 @@
     border: 3px solid hsl(217, 16%, 45%);
     border-radius: 5px;
     width: 50vw;
-    height: 110px;
+    height: 80px;
     padding: 15px;
     justify-content: space-between;
-
+    justify-self: center;
 }
 
 #divG h1{
@@ -14,19 +14,23 @@
 }
 #divTitre{
     color: white;
-    font-size: 12pt;
+    font-size: 10pt;
 }
+
 #divScore{
     background-color: white;
     border-radius: 5px;
     width: 30%;
+    align-content: center;
 }
 #divScore>h1{
     text-align: center;
     color: hsl(228, 19%, 45%);
+    margin: 0;
 }
 #divScore>h4{
     color: hsl(229, 64%, 46%);
     text-align: center;
     font-weight: 300;
+    margin: 0;
 }
