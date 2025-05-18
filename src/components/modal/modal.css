@@ -36,3 +36,14 @@
     color: white;
   }
   
+  @media (max-width: 682px){
+    .modal-content{
+        width: 90%;
+        height: 90%;
+    }
+    .modal-content>img{
+        justify-self: center;
+        align-self: center;
+    }
+
+  }
